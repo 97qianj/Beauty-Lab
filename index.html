@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="description" content="Qian Jiang’s UX and product design portfolio. Explore interactive demos for Mymee, Nailed It!, and The Four of Us.">
+  <meta property="og:title" content="Qian Jiang · UX & Product Design">
+  <meta property="og:description" content="Selected product design work and hands-on demos.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://97qianj.github.io/Beauty-Lab/cover.webp">
+  <title>Qian Jiang · UX & Product Design</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="brand" href="./">Qian Jiang</a>
+      <div class="nav-links">
+        <a href="#work">Selected work</a>
+        <a href="#portfolio">Portfolio PDF</a>
+        <a href="mailto:qianj@clemson.edu">Contact <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="wrap hero" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="label">UX &amp; Product Design · 2026</p>
+        <h1 id="intro-title">Designing clear, <em>editable</em> digital experiences.</h1>
+        <p class="lede">I’m Qian Jiang. My work spans mobile products, visual customization, and illustrated storytelling.</p>
+        <div class="actions">
+          <a class="button primary" href="#work">Explore the work <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="portfolio.pdf" target="_blank" rel="noopener">View portfolio PDF <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <img src="work-montage.webp" width="702" height="958" alt="Screens from the illustrated bookshelf, Mymee wardrobe app, and Nailed It! editor">
+        <figcaption>The Four of Us · Mymee · Nailed It!</figcaption>
+      </figure>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2 id="work-title">Selected work</h2>
+          <nav class="case-nav" aria-label="Projects">
+            <a href="#mymee">Mymee</a>
+            <a href="#nailed-it">Nailed It!</a>
+            <a href="#the-four-of-us">The Four of Us</a>
+          </nav>
+        </div>
+
+        <article class="case" id="mymee" aria-labelledby="mymee-title">
+          <div class="case-copy">
+            <p class="label">Wardrobe · Mobile product</p>
+            <h3 id="mymee-title">Mymee</h3>
+            <p>Mymee connects wardrobe organization and outfit creation. A piece can be found by category, organized into a space, and reused in different looks.</p>
+            <p><strong>Design decision.</strong> Keep the outfit visible while browsing and swapping garments so each change is easy to assess.</p>
+            <a class="text-link" href="portfolio.pdf#page=3" target="_blank" rel="noopener">View Mymee case study <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="demo wardrobe">
+            <img id="garment" src="mymee-tee.webp" width="500" height="625" alt="White tee" loading="lazy">
+            <div class="controls">
+              <h4>Swap a wardrobe piece</h4>
+              <p class="demo-note">Choose a piece to update the preview.</p>
+              <fieldset id="wardrobe-choices">
+                <legend class="sr-only">Wardrobe piece</legend>
+                <div class="choices">
+                  <label><input type="radio" name="garment" value="tee" checked><span>White tee</span></label>
+                  <label><input type="radio" name="garment" value="knit"><span>Oat knit</span></label>
+                  <label><input type="radio" name="garment" value="blazer"><span>Black blazer</span></label>
+                  <label><input type="radio" name="garment" value="trench"><span>Tan trench</span></label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </article>
+
+        <article class="case" id="nailed-it" aria-labelledby="nails-title">
+          <div class="case-copy">
+            <p class="label">Creative tools · Interaction design</p>
+            <h3 id="nails-title">Nailed It!</h3>
+            <p>The nail editor lets people shape, color, and decorate each nail independently. The selected nail stays in view while users move between presets and detailed controls.</p>
+            <p><strong>Design decision.</strong> Start with a preset, then expose finer settings for the effect the user is working on.</p>
+            <a class="text-link" href="portfolio.pdf#page=10" target="_blank" rel="noopener">View Nailed It! case study <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="demo nail-demo">
+            <div class="nail-stage">
+              <img src="nail-app.webp" width="392" height="536" alt="Original nail editor showing per-finger controls and color swatches" loading="lazy">
+              <div class="sample"><div id="nail-sample" data-shape="oval" data-finish="gloss" aria-hidden="true"></div></div>
+            </div>
+            <div class="controls">
+              <h4>Design a nail sample</h4>
+              <div class="nail-options">
+                <label>Shape <select id="nail-shape"><option value="oval">Oval</option><option value="square">Soft square</option><option value="almond">Almond</option></select></label>
+                <label>Color <select id="nail-color"><option value="#ae626f">Rose</option><option value="#732e49">Mulberry</option><option value="#59776b">Jade</option><option value="#a387b1">Lilac</option></select></label>
+                <label>Finish <select id="nail-finish"><option value="gloss">Gloss</option><option value="matte">Matte</option><option value="cat-eye">Cat eye</option></select></label>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="case" id="the-four-of-us" aria-labelledby="storybook-title">
+          <div class="case-copy">
+            <p class="label">Digital storybook · Web design</p>
+            <h3 id="storybook-title">The Four of Us</h3>
+            <p>An illustrated bookshelf leads readers from cover discovery into a page-by-page story. Artwork and narration stay together as readers turn each page.</p>
+            <p><strong>Design decision.</strong> Keep page controls in the same place throughout the story so readers can focus on the illustrations.</p>
+            <a class="text-link" href="portfolio.pdf#page=12" target="_blank" rel="noopener">View storybook case study <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="demo story">
+            <img id="story-art" src="story-1.webp" width="1100" height="825" alt="A warmly lit cottage under a crescent moon" loading="lazy">
+            <div class="controls">
+              <h4>Who Will Turn Off the Light?</h4>
+              <p class="demo-note">Read the first five pages.</p>
+              <p id="story-text" aria-live="polite">Night had arrived.<br>Outside, the wind whispered past the windows.<br>Inside the little house, one warm light was still glowing.</p>
+              <div class="story-nav">
+                <button id="story-prev" type="button" disabled>← Previous</button>
+                <span id="story-position">1 / 5</span>
+                <button id="story-next" type="button">Next →</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap portfolio" id="portfolio" aria-labelledby="portfolio-title">
+      <div>
+        <h2 id="portfolio-title">Complete portfolio</h2>
+        <p>14 pages of case studies, design decisions, and academic work.</p>
+      </div>
+      <div class="actions">
+        <a class="button primary" href="portfolio.pdf" target="_blank" rel="noopener">Open PDF <span aria-hidden="true">↗</span></a>
+        <a class="button" href="portfolio.pdf" download="Qian_Jiang_UX_Portfolio.pdf">Download PDF <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap footer"><span>© 2026 Qian Jiang · Phoenix, Arizona</span><a href="mailto:qianj@clemson.edu">qianj@clemson.edu</a></footer>
+</body>
+</html>
