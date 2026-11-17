@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Four of Us | Library</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="library-shell">
+      <header class="library-header">
+        <a class="back-link" href="../../storybook.html" aria-label="Back to the case study"><span aria-hidden="true">‹</span> Case study</a>
+        <label class="library-search" aria-label="Search books">
+          <span aria-hidden="true">⌕</span>
+          <input id="bookSearch" type="search" placeholder="Search books" />
+          <span class="search-star" aria-hidden="true">★</span>
+        </label>
+      </header>
+
+      <div class="library-title-block page-title">
+        <img class="library-title-image" src="images/library-title.webp" alt="Our Little Story Shelf" />
+        <h1 class="visually-hidden">Our Little Story Shelf</h1>
+      </div>
+
+      <section class="banner-section" aria-label="Featured books">
+        <div class="banner-inner">
+          <button class="banner-button banner-prev" id="bannerPrev" type="button" aria-label="Previous featured book">‹</button>
+          <div class="banner-window">
+            <div class="banner-track" id="bannerTrack">
+              <a class="banner-slide" data-accent="112, 86, 48" href="../Stories/who-will-turn-off-the-light/index.html">
+                <img src="images/library-banner-01-one-tiny-invention.webp" alt="Millie has an idea" />
+                <div class="banner-copy">
+                  <p>Funny Friends</p>
+                  <h2>One Tiny Invention</h2>
+                </div>
+              </a>
+              <a class="banner-slide" data-accent="64, 82, 76" href="../Stories/who-will-turn-off-the-light/index.html">
+                <img src="images/library-banner-02-glowing-path-to-bedtime.webp" alt="Glowing star path scene" />
+                <div class="banner-copy">
+                  <p>Book 1</p>
+                  <h2>A glowing path to bedtime</h2>
+                </div>
+              </a>
+              <a class="banner-slide" data-accent="80, 68, 98" href="../Stories/who-will-turn-off-the-light/index.html">
+                <img src="images/library-banner-03-cozy-indoor-camping.webp" alt="Warm night tent scene" />
+                <div class="banner-copy">
+                  <p>Now Reading</p>
+                  <h2>Cozy indoor camping</h2>
+                </div>
+              </a>
+              <a class="banner-slide" data-accent="122, 92, 42" href="../Stories/who-will-turn-off-the-light/index.html">
+                <img src="images/library-banner-04-who-will-turn-off-the-light.webp" alt="Indoor camping scene" />
+                <div class="banner-copy">
+                  <p>New Story</p>
+                  <h2>Who Will Turn Off the Light?</h2>
+                </div>
+              </a>
+              <a class="banner-slide" data-accent="72, 94, 126" href="../Stories/who-will-turn-off-the-light/index.html">
+                <img src="images/library-banner-05-everyone-matters.webp" alt="Friends hugging Bippo" />
+                <div class="banner-copy">
+                  <p>Warm Ending</p>
+                  <h2>Everyone matters</h2>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button class="banner-button banner-next" id="bannerNext" type="button" aria-label="Next featured book">›</button>
+        </div>
+        <div class="banner-dots" id="bannerDots" aria-label="Featured book selector">
+          <button class="active" type="button" aria-label="Show banner 1"></button>
+          <button type="button" aria-label="Show banner 2"></button>
+          <button type="button" aria-label="Show banner 3"></button>
+          <button type="button" aria-label="Show banner 4"></button>
+          <button type="button" aria-label="Show banner 5"></button>
+        </div>
+      </section>
+
+
+      <section class="books-section" aria-label="Available books">
+        <div class="book-grid" id="bookGrid">
+          <a class="book-card is-ready" data-title="who will turn off the light book 1" href="../Stories/who-will-turn-off-the-light/index.html" aria-label="Open Who Will Turn Off the Light">
+            <span class="book-cover-wrap">
+              <img src="../Stories/who-will-turn-off-the-light/images/cover.webp" alt="Who Will Turn Off the Light? cover" />
+            </span>
+          </a>
+          <div class="book-card is-ready is-display-only" data-title="the not so perfect picnic 不完美的野餐 book 2" aria-label="The Not-So-Perfect Picnic">
+            <span class="book-cover-wrap">
+              <img src="../Stories/the-not-so-perfect-picnic/images/cover.webp" alt="The Not-So-Perfect Picnic cover" />
+            </span>
+          </div>
+          <div class="book-slot" data-title="book 3" aria-label="Coming soon book slot 3">
+            <img src="images/library-coming-soon-book.webp" alt="Coming soon" />
+          </div>
+          <div class="book-slot" data-title="book 4" aria-label="Coming soon book slot 4">
+            <img src="images/library-coming-soon-book.webp" alt="Coming soon" />
+          </div>
+          <div class="book-slot" data-title="book 5" aria-label="Coming soon book slot 5">
+            <img src="images/library-coming-soon-book.webp" alt="Coming soon" />
+          </div>
+          <div class="book-slot" data-title="book 6" aria-label="Coming soon book slot 6">
+            <img src="images/library-coming-soon-book.webp" alt="Coming soon" />
+          </div>
+          <div class="book-slot" data-title="book 7" aria-label="Coming soon book slot 7">
+            <img src="images/library-coming-soon-book.webp" alt="Coming soon" />
+          </div>
+          <div class="book-slot" data-title="book 8" aria-label="Coming soon book slot 8">
+            <img src="images/library-coming-soon-book.webp" alt="Coming soon" />
+          </div>
+          <div class="book-slot" data-title="book 9" aria-label="Coming soon book slot 9">
+            <img src="images/library-coming-soon-book.webp" alt="Coming soon" />
+          </div>
+          <div class="book-slot" data-title="book 10" aria-label="Coming soon book slot 10">
+            <img src="images/library-coming-soon-book.webp" alt="Coming soon" />
+          </div>
+          <nav class="pagination" aria-label="Book pages">
+            <button class="page-control" id="prevBooks" type="button">‹ Previous</button>
+            <div class="page-numbers" id="pageNumbers">
+              <button class="active" type="button">1</button>
+              <button type="button">2</button>
+              <button type="button">3</button>
+            </div>
+            <button class="page-control" id="nextBooks" type="button">Next ›</button>
+          </nav>
+        </div>
+      </section>
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

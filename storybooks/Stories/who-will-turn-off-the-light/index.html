@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who Will Turn Off the Light?</title>
+    <link rel="stylesheet" href="reader.css" />
+  </head>
+  <body>
+    <main class="reader-shell">
+      <header class="reader-topbar">
+        <a class="reader-back" href="../../Library/index.html" aria-label="Back to library"><span aria-hidden="true">‹</span> Library</a>
+        <div class="reader-titlebar">
+          <img class="reader-title-image" src="images/title.webp" alt="Who Will Turn Off the Light?" />
+        </div>
+        <div class="reader-tools" aria-label="Reader tools">
+          <span class="reader-count" id="pageStatus">1 / 30</span>
+          <button class="tool-button language-toggle" id="languageToggle" type="button" aria-label="Switch language">中</button>
+          <button class="tool-button" id="readAloud" type="button" aria-label="Read aloud">♪</button>
+        </div>
+      </header>
+
+      <section class="cover-view" id="coverView" aria-label="Book details">
+        <img class="detail-title" src="images/title.webp" alt="Who Will Turn Off the Light?" />
+
+        <div class="detail-card">
+          <button class="cover-book" id="startBook" type="button" aria-label="Start reading">
+            <img src="images/cover.webp" alt="Who Will Turn Off the Light? cover" />
+          </button>
+
+          <div class="book-info">
+            <p class="book-summary">
+              It's bedtime, but who will turn off the light? A cozy adventure about courage,
+              teamwork, and sweet dreams.
+            </p>
+            <div class="book-tags" aria-label="Book details">
+              <span class="tag-age">Ages 4+</span>
+              <span class="tag-bedtime">Bedtime Story</span>
+              <span class="tag-friendship">Friendship</span>
+              <span class="tag-time">12 mins</span>
+            </div>
+            <button class="start-button" id="startButton" type="button">
+              <span aria-hidden="true">📖</span>
+              Start Reading
+            </button>
+          </div>
+
+          <section class="preview-strip" id="pagePreview" aria-label="A peek inside">
+            <h2>A Peek Inside</h2>
+            <button class="preview-arrow preview-prev" type="button" aria-label="Previous preview">‹</button>
+            <div class="preview-list">
+              <img src="images/page-07.webp" alt="Friends camping indoors" />
+              <img src="images/page-03.webp" alt="Millie shares an idea" />
+              <img src="images/page-20.webp" alt="Bippo in the dark" />
+              <img src="images/page-25.webp" alt="Friends in a cozy tent" />
+              <img src="images/page-21.webp" alt="A glowing path to the light switch" />
+              <img src="images/page-17.webp" alt="Friends hugging Bippo" />
+            </div>
+            <button class="preview-arrow preview-next" type="button" aria-label="Next preview">›</button>
+            <div class="preview-dots" aria-hidden="true">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </section>
+        </div>
+
+        <img class="bottom-characters" src="../../Shared/images/story-detail-bottom-characters.webp" alt="" aria-hidden="true" />
+      </section>
+
+      <section class="reading-view" id="readingView" aria-label="Book reader" hidden>
+        <div class="book-area">
+          <button class="frame-stage" id="pageButton" type="button" aria-label="Next page">
+            <div class="spread-page text-page">
+              <div class="page-ornament" aria-hidden="true">☾</div>
+              <div class="page-copy" id="pageText"></div>
+              <div class="printed-page-number" id="printedPageNumber">1</div>
+            </div>
+            <div class="spread-page image-page">
+              <img class="page-illustration" id="pageImage" alt="" />
+            </div>
+          </button>
+        </div>
+
+
+        <div class="thumbnail-tray" aria-label="Page thumbnails">
+          <button class="thumb-arrow" id="thumbPrev" type="button" aria-label="Previous page">‹ Previous</button>
+          <div class="thumbnail-list" id="thumbnailList"></div>
+          <button class="thumb-arrow" id="thumbNext" type="button" aria-label="Next page">Next ›</button>
+        </div>
+
+        <img class="reader-bottom-characters" src="../../Shared/images/story-detail-reader-characters.webp" alt="" aria-hidden="true" />
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

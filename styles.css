@@ -38,12 +38,12 @@ h1 { font-size: clamp(3.2rem, 6.2vw, 6.4rem); margin-block: 14px 26px; }
 h1 em { color: var(--accent); font-weight: inherit; }
 .lede { color: var(--muted); font-size: clamp(1rem, 1.5vw, 1.15rem); max-width: 38ch; }
 .actions { gap: 12px 22px; margin-top: 28px; }
-.button, .story-nav button {
+.button {
   display: inline-flex; align-items: center; justify-content: center; gap: .6em;
   padding: .67rem 1.15rem; border: 1px solid var(--accent); border-radius: 999px;
   background: transparent; color: var(--accent); font-size: .9rem; font-weight: 650; text-decoration: none;
 }
-.button:hover, .story-nav button:hover:not(:disabled) { background: var(--warm); }
+.button:hover { background: var(--warm); }
 .button.primary { background: var(--accent); color: var(--paper); }
 .button.primary:hover { background: #503827; }
 .text-link { font-size: .9rem; font-weight: 650; color: var(--accent); }
@@ -60,43 +60,26 @@ h1 em { color: var(--accent); font-weight: inherit; }
 .case-copy strong { color: var(--ink); }
 .case-copy .text-link { display: inline-block; margin-top: 6px; }
 
-.demo { background: var(--bg); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
-.controls { padding: 18px 22px 22px; }
-h4 { font: 400 1.45rem/1.2 var(--heading); margin: 0 0 5px; }
-.demo-note { color: var(--muted); font-size: .82rem; }
-.wardrobe { display: grid; grid-template-columns: 1fr 1fr; align-items: center; }
-.wardrobe > img { width: 100%; height: 100%; min-height: 300px; object-fit: contain; background: #f5f0e9; }
-fieldset { padding: 0; margin: 14px 0 0; border: 0; min-width: 0; }
-.choices { display: flex; flex-wrap: wrap; gap: 8px; }
-.choices label { position: relative; cursor: pointer; }
-.choices input { position: absolute; opacity: 0; }
-.choices span { display: block; border: 1px solid var(--line); border-radius: 999px; padding: 8px 12px; font-size: .8rem; }
-.choices input:checked + span { border-color: var(--accent); background: var(--accent); color: var(--paper); }
-.choices input:focus-visible + span { outline: 3px solid #8a5432; outline-offset: 2px; }
-.nail-stage { display: grid; grid-template-columns: 1fr 1fr; height: 250px; background: #e9ddd7; overflow: hidden; }
-.nail-stage img { height: 100%; width: 100%; object-fit: contain; padding: 14px; }
-.sample { display: grid; place-items: center; background: radial-gradient(ellipse at 50% 44%, #f8ede7, #e1cec3); }
-#nail-sample {
-  --polish: #ae626f;
-  width: 74px; height: 122px; border-radius: 52% 52% 42% 42% / 48% 48% 23% 23%;
-  background: radial-gradient(ellipse at 37% 22%, #fff8 0%, transparent 46%), linear-gradient(90deg, #0003, transparent 30% 74%, #0003), var(--polish);
-  box-shadow: inset 0 1px 2px #fffa, inset 0 -3px 5px #0004, 8px 17px 27px #53242143;
-  transform: rotate(-14deg);
+.project-art {
+  display: block; overflow: hidden; border-radius: 14px; border: 1px solid var(--line);
+  background: var(--warm);
 }
-#nail-sample[data-shape="square"] { border-radius: 20% 20% 29% 29% / 13% 13% 16% 16%; }
-#nail-sample[data-shape="almond"] { border-radius: 51% 51% 42% 42% / 67% 67% 19% 19%; }
-#nail-sample[data-finish="matte"] { background: linear-gradient(90deg, #0002, transparent 45%, #0002), var(--polish); box-shadow: inset 0 -2px 5px #0003, 8px 17px 27px #53242143; }
-#nail-sample[data-finish="cat-eye"] { background: linear-gradient(125deg, #0005 11%, transparent 38%, #fff9 52%, #ffecb945 57%, transparent 72%, #0004), var(--polish); }
+.project-art:hover { border-color: var(--accent); }
+.phone-pair {
+  display: flex; align-items: center; justify-content: center; gap: clamp(10px, 4vw, 34px);
+  min-height: 260px; padding: clamp(14px, 4vw, 32px); background: #eae0d5;
+}
+.phone-pair img {
+  width: auto; height: clamp(170px, 32vw, 290px); max-width: 50%; object-fit: contain;
+  border-radius: 8px; filter: drop-shadow(0 6px 10px #51413226);
+}
+.nail-art { background: #e5e9e3; }
+.story-art img { width: 100%; }
+.demo-note { color: var(--muted); font-size: .82rem; }
+fieldset { border: 0; padding: 0; min-width: 0; }
 .nail-options { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
 .nail-options label { flex: 1 0 95px; display: grid; gap: 6px; color: var(--muted); font-size: .78rem; }
 .nail-options select { width: 100%; min-height: 40px; background: var(--paper); color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 6px; }
-.story > img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
-#story-text { white-space: pre-line; margin-block: 12px 16px; color: var(--ink); font: 1rem/1.5 var(--heading); }
-.story-nav { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
-.story-nav button { min-width: 108px; padding: 8px 12px; font-size: .8rem; cursor: pointer; }
-.story-nav button:disabled { opacity: .48; cursor: default; }
-#story-position { color: var(--muted); font-size: .82rem; white-space: nowrap; }
-
 .portfolio, .footer { display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; }
 .portfolio { padding-block: 64px; }
 .portfolio p { color: var(--muted); margin-top: 10px; }
@@ -113,11 +96,17 @@ fieldset { padding: 0; margin: 14px 0 0; border: 0; min-width: 0; }
   .wrap { width: calc(100% - 32px); }
   .nav-links { gap: 14px; font-size: .79rem; }
   .nav { gap: 4px 16px; }
-  .wardrobe { grid-template-columns: 1fr; }
-  .wardrobe > img { min-height: 0; height: 240px; }
-  .nail-stage { height: 210px; }
-  .controls { padding-inline: 16px; }
-  .story-nav button { min-width: 0; }
   .portfolio { padding-block: 44px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.academic { padding-block: 52px; border-bottom: 1px solid var(--line); }
+.academic .label { margin-bottom: 8px; }
+.academic-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 24px; }
+.academic-grid h3 { font-size: clamp(1.7rem,3vw,2.6rem); }
+.academic-grid p { margin: 9px 0 18px; max-width: 58ch; color: var(--muted); }
+.academic .phone-pair a { max-width: 45%; }
+.academic .phone-pair a img { max-width: 100%; }
+@media (max-width: 730px) {
+  .academic-grid { grid-template-columns: 1fr; gap: 30px; }
+}
